@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/default.css" />
+    <link rel="stylesheet" href="/assets/payment.css" />
+    <title>Payment Confirmation</title>
+  </head>
+  <body>
+    <!-- ** nav bar section **  -->
+
+    <header class="header-container">
+      <div class="logo-container">
+        <img src="/images/logo.jpeg" alt="Blended Cutz" class="header-logo" />
+        <h5 class="logo-heading">Blended Cutz</h5>
+      </div>
+
+      <nav>
+        <ul class="header-menu">
+          <li>
+            <a class="header__link" href="#service">Services</a>
+          </li>
+          <li>
+            <a class="header__link" href="#connect">Connect With Us</a>
+          </li>
+          <li>
+            <a class="header__link" href="#app" target="_blank">Download App</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="topinfo-container">
+      <a class="prev-page" href="/date/index.html">Previous Page</a>
+      <h1 class="payment-heading">Payment Details</h1>
+    </div>
+
+    <!-- ** enter your info **  -->
+
+    <div class="payment_info-container">
+      <form action="">
+        <div class="card-icons">
+          <img src="/images/discover.png" alt="Discover" />
+          <img src="/images/visa.png" alt="visa" />
+          <img src="/images/american-express.png" alt="American Express" />
+        </div>
+
+        <div class="input-group">
+          <label for="">Cardholder Name</label>
+          <input type="text" placeholder="Enter your name" required />
+        </div>
+
+        <div class="input-group">
+          <label for="">Card Number</label>
+          <input
+            type="text"
+            placeholder="Enter your card number"
+            maxlength="16"
+            required
+          />
+        </div>
+
+        <div class="input-group-row">
+          <div class="input-group">
+            <label for="">Expiration Date</label>
+            <input type="text" placeholder="MM//YY" maxlength="5" required />
+          </div>
+
+          <div class="input-group">
+            <label for="">CVV</label>
+            <input type="text" placeholder="123" required />
+          </div>
+        </div>
+        <textarea
+          name="Message"
+          rows="10"
+          placeholder="Appointment Notes (Optional)"
+        ></textarea>
+      </form>
+      <button class="btn visit_btn">Confirm Your Order</button>
+    </div>
+    <script type="module" src="/payment/payment.js"></script>
+  </body>
+</html>

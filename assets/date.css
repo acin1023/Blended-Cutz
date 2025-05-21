@@ -1,0 +1,350 @@
+:root {
+    --clr-main: #CCB9B9;
+    --clr-light: #cbd5e1;
+    --clr-dark: #0a0a0a;
+    --clr-linear-gradient: #739DDE, #14215D;
+    --clr-bg: rgb(59, 56, 56);
+
+    /* flex basis sizing  */
+
+    --size-xxs: 0.625rem;
+    --size-xs: 0.75rem;
+    --size-s: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+
+}
+
+body {
+    background-image: linear-gradient(#272222, #813C3C);
+    height: auto;
+    margin-bottom: 1rem;
+    /* border: 10px solid #14215D; */
+}
+
+.topinfo-container {
+    margin-left: 0.5rem;
+}
+
+a {
+    color: whitesmoke;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+
+.date-heading {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.options {
+    margin-bottom: 2rem;
+    color: whitesmoke;
+}
+
+.option-2 {
+    text-decoration: underline;
+}
+
+.main-container {
+    /* border: 10px solid blueviolet; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: auto;
+    place-content: center;
+    gap: 1rem;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: var(--size-xl);
+    color: var(--clr-light);
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-bottom: 0.5rem;
+    color: var(--clr-light);
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    /* border: 10px solid palevioletred; */
+    gap: 0.5rem;
+    color: antiquewhite;
+}
+
+.dates {
+    cursor: pointer;
+}
+
+.dates:hover {
+    color: black;
+}
+
+
+.today {
+    background-color: #CCB9B9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.today:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+
+.time-select {
+    /* border: 10px solid orangered; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-top: 3rem;
+}
+
+.time {
+    border-radius: 20px;
+    background-color: #CCB9B9;
+    border: 4px solid black;
+    padding: 1rem;
+    margin: 0.5rem;
+    overflow: none;
+    text-align: center;
+}
+
+.time:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.right-container {
+    border-radius: 6px;
+    background-color: #CCB9B9;
+    /* border: 10px solid greenyellow; */
+    display: grid;
+    width: 100%;
+    place-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.order-heading {
+    color: black;
+    text-align: center;
+}
+
+.mini-top_div {
+    /* border: 10px solid powderblue; */
+    margin-top: 1rem;
+    gap: 0.5rem;
+    display: flex;
+}
+
+.mini-top_div img {
+    width: 64px;
+    border-radius: 50px;
+}
+
+.mini-div1 {
+    /* border: 10px solid orange; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.tip-options {
+    display: flex;
+    justify-content: space-between;
+    /* border: 10px solid yellow; */
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tip-options h5 {
+    background-color: #CCB9B9;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+.tip-options h5:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.mini-div2 {
+    /* border: 10px solid forestgreen; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.mini-div3 {
+    /* border: 10px solid brown; */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* xxs screens */
+@media (min-width: 320px) {
+    .date-heading {
+        font-size: var(--size-lg);
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .right-container {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+/* small screens */
+@media (min-width: 425px) {
+    .right-container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* medium screens */
+@media (min-width: 768px) {
+    .date-heading {
+        font-size: var(--size-xl);
+    }
+
+    .options {
+        font-size: var(--size-base);
+    }
+
+    .order_btn {
+        font-size: var(--size-base);
+        margin-top: 4rem;
+    }
+
+    .calendar-header {
+        font-size: var(--size-xl);
+    }
+
+
+}
+
+/* l screens */
+@media (min-width: 1024px) {
+    .date-heading {
+        font-size: var(--size-2xl);
+    }
+
+    .options {
+        font-size: var(--size-lg);
+    }
+
+    .order_btn {
+        font-size: var(--size-lg);
+        margin-top: 4rem;
+    }
+
+
+    .calendar-header {
+        font-size: var(--size-2xl);
+        font-weight: bold;
+    }
+
+    .weekdays {
+        font-size: var(--size-2xl);
+    }
+
+    .calendar-dates {
+        font-size: var(--size-lg);
+    }
+
+    .time-select {
+        font-size: var(--size-lg);
+    }
+
+
+    .right-container {
+        font-size: var(--size-2xl);
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* xl screens */
+@media (min-width: 1440px) {
+    .date-heading {
+        font-size: var(--size-3xl);
+    }
+
+    .options {
+        font-size: var(--size-xl);
+    }
+
+
+
+    .calendar-header {
+        font-size: var(--size-3xl);
+        font-weight: bold;
+    }
+
+    .weekdays {
+        font-size: var(--size-3xl);
+    }
+
+    .calendar-dates {
+        font-size: var(--size-xl);
+    }
+
+    .time-select {
+        font-size: var(--size-xl);
+    }
+
+    .order_btn {
+        font-size: var(--size-xl);
+    }
+
+}
+
+
+
+/* xxs screens */
+/* @media (min-width: 320px) {} */
+
+/* small screens */
+/* @media (min-width: 425px) {} */
+
+/* medium screens */
+/* @media (min-width: 768px) {} */
+
+/* l screens */
+/* @media (min-width: 1024px) {} */
+
+/* xl screens */
+/* @media (min-width: 1440px) {} */
+
+/* 2xl screens
+@media (min-width: 1536px) {} */

@@ -1,0 +1,121 @@
+:root {
+    --clr-main: #CCB9B9;
+    --clr-light: #cbd5e1;
+    --clr-dark: #0a0a0a;
+    --clr-linear-gradient: #739DDE, #14215D;
+    --clr-bg: rgb(59, 56, 56);
+
+    /* flex basis sizing  */
+
+    --size-xxs: 0.625rem;
+    --size-xs: 0.75rem;
+    --size-s: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+
+}
+
+
+.connect-container {
+    text-align: center;
+    border: 8px solid var(--clr-main);
+    width: auto;
+    justify-self: center;
+    color: whitesmoke;
+    padding: 5rem;
+}
+
+.connect-para {
+    margin-top: 1rem;
+}
+
+.connect-acct {
+    text-decoration: underline;
+    margin-top: 1rem;
+    color: whitesmoke;
+}
+
+.connect-acct:hover {
+    color: #CCB9B9;
+}
+
+/* xxs screens */
+@media (min-width: 320px) {
+    .connect-title {
+        text-align: center;
+        font-size: var(--size-xl);
+    }
+
+    .connect-para {
+        font-size: var(--size-s);
+    }
+
+
+    .connect-acct {
+        font-size: var(--size-xl);
+    }
+
+}
+
+/* medium screens */
+@media (min-width: 768px) {
+    .connect-title {
+        font-size: var(--size-2xl);
+    }
+
+    .connect-para {
+        font-size: var(--size-base);
+    }
+
+
+    .connect-acct {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* l screens */
+@media (min-width: 1024px) {
+    .connect-container {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .connect-title {
+        font-size: var(--size-3xl);
+    }
+
+    .connect-para {
+        font-size: var(--size-lg);
+    }
+
+
+    .connect-acct {
+        font-size: var(--size-3xl);
+    }
+}
+
+/* xl screens */
+@media (min-width: 1440px) {
+    .connect-title {
+        font-size: var(--size-4xl);
+    }
+
+    .connect-para {
+        font-size: var(--size-xl);
+    }
+
+
+    .connect-acct {
+        font-size: var(--size-4xl);
+    }
+}

@@ -1,0 +1,134 @@
+:root {
+    --clr-main: #CCB9B9;
+    --clr-light: #cbd5e1;
+    --clr-dark: #0a0a0a;
+    --clr-linear-gradient: #739DDE, #14215D;
+    --clr-bg: rgb(59, 56, 56);
+
+    /* flex basis sizing  */
+
+    --size-xxs: 0.625rem;
+    --size-xs: 0.75rem;
+    --size-s: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* .services {
+    border: 8px solid plum;
+} */
+
+.services-title {
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 3rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* border: 10px solid orange; */
+    max-width: 2560px;
+    width: auto;
+    margin: auto;
+}
+
+.service-details {
+    color: whitesmoke;
+    /* border: 8px solid black; */
+    /* width: fit-content; */
+}
+
+.services-left {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 3rem;
+    place-content: center;
+    /* border: 8px solid palevioletred; */
+}
+
+/* .services-right {
+    display: flex;
+    border: 8px solid palegreen;
+
+} */
+
+.services-right img {
+    width: auto;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+    margin-right: 1rem;
+}
+
+/* xxs screens */
+@media (min-width: 320px) {
+    .services-title {
+        font-size: var(--size-2xl);
+        margin-bottom: 1rem;
+    }
+
+    .service-details h2 {
+        font-size: var(--size-xl);
+    }
+
+    .service-details {
+        font-size: var(--size-base);
+    }
+
+    .services-right img {
+        margin-top: 2rem;
+    }
+}
+
+/* l screens */
+@media (min-width: 1024px) {
+
+    .services-title {
+        font-size: var(--size-4xl);
+
+    }
+
+    .service-details h2 {
+        font-size: var(--size-3xl);
+        margin-bottom: 0.5rem;
+    }
+
+
+    .services-right img {
+        width: 100%;
+        height: 70%;
+        place-content: center;
+    }
+}
+
+/* xl screens */
+@media (min-width: 1440px) {
+    .services-title {
+        font-size: var(--size-5xl);
+
+    }
+
+    .service-details {
+        font-size: var(--size-lg);
+    }
+
+}

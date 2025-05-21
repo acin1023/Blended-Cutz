@@ -1,0 +1,204 @@
+:root {
+    --clr-main: #CCB9B9;
+    --clr-light: #cbd5e1;
+    --clr-dark: #0a0a0a;
+    --clr-linear-gradient: #739DDE, #14215D;
+    --clr-bg: rgb(59, 56, 56);
+
+    /* flex basis sizing  */
+
+    --size-xxs: 0.625rem;
+    --size-xs: 0.75rem;
+    --size-s: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+
+}
+
+body {
+    background-image: linear-gradient(#272222, #813C3C);
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: whitesmoke;
+    margin-left: 0.5rem;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+.payment-heading {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+
+}
+
+.payment_info-container {
+    /* border: 10px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+.card-icons {
+    /* border: 10px solid limegreen; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.card-icons img {
+    width: 64px;
+    height: 64px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    /* border: 14px solid salmon; */
+    margin-bottom: 0.5rem;
+    color: var(--clr-light);
+}
+
+.input-group label {
+    text-align: left;
+}
+
+.input-group-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.input-group-row .input-group {
+    width: 50%;
+}
+
+.input-group input {
+    padding: 0.6rem;
+    /* border: 10px solid yellow; */
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+}
+
+textarea {
+    text-align: center;
+    margin-top: 2rem;
+    background-color: #CCB9B9;
+    padding-top: 1rem;
+}
+
+form {
+    width: auto;
+}
+
+
+/* xxs screens */
+@media (min-width: 320px) {
+    .payment-heading {
+        font-size: var(--size-lg);
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* medium screens */
+@media (min-width: 768px) {
+    .payment-heading {
+        font-size: var(--size-xl);
+    }
+}
+
+/* l screens */
+@media (min-width: 1024px) {
+    .payment-heading {
+        font-size: var(--size-2xl);
+
+    }
+
+    .card-icons img {
+        width: 84px;
+        height: 84px;
+    }
+
+    .input-group label {
+        font-size: var(--size-xl);
+    }
+
+    .input-group input {
+        font-size: var(--size-lg);
+    }
+
+    textarea {
+        font-size: var(--size-lg);
+    }
+
+    .visit_btn {
+        font-size: var(--size-base);
+    }
+}
+
+/* xl screens */
+@media (min-width: 1440px) {
+    .payment-heading {
+        font-size: var(--size-3xl);
+
+    }
+
+    .input-group label {
+        font-size: var(--size-2xl);
+    }
+
+    .input-group input {
+        font-size: var(--size-xl);
+    }
+
+    textarea {
+        font-size: var(--size-xl);
+    }
+
+    .visit_btn {
+        font-size: var(--size-lg);
+    }
+}
+
+
+
+/* xxs screens */
+/* @media (min-width: 320px) {} */
+
+/* small screens */
+/* @media (min-width: 425px) {} */
+
+/* medium screens */
+/* @media (min-width: 768px) {} */
+
+/* l screens */
+/* @media (min-width: 1024px) {} */
+
+/* xl screens */
+/* @media (min-width: 1440px) {} */
+
+/* 2xl screens
+@media (min-width: 1536px) {} */

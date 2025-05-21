@@ -1,0 +1,136 @@
+:root {
+    --clr-main: #CCB9B9;
+    --clr-light: #cbd5e1;
+    --clr-dark: #0a0a0a;
+    --clr-linear-gradient: #739DDE, #14215D;
+    --clr-bg: rgb(59, 56, 56);
+
+    /* flex basis sizing  */
+
+    --size-xxs: 0.625rem;
+    --size-xs: 0.75rem;
+    --size-s: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+
+}
+
+.download-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    /* border: 10px solid #CCB9B9; */
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100mvh;
+}
+
+.download-left {
+    text-align: center;
+    color: whitesmoke;
+    /* border: 10px solid lightskyblue; */
+    width: 50%;
+    margin: auto;
+
+}
+
+.download-para {
+    /* width: 50%; */
+    margin-bottom: 1rem;
+}
+
+.download-btn {
+    background: #CCB9B9;
+    color: black;
+    padding: 1rem 4rem;
+    border: 3px solid whitesmoke;
+}
+
+.download-btn:hover {
+    background: linear-gradient(to top, #CCB9B9, rgb(132, 112, 112));
+    color: whitesmoke;
+    padding: 1rem 4rem;
+    border: 3px solid black;
+}
+
+.download-right {
+    /* border: 10px solid limegreen; */
+    width: 50%;
+    margin: auto;
+
+}
+
+.download-right img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+/* xxs screens */
+@media (min-width: 320px) {
+    .download-para {
+        font-size: var(--size-xl);
+    }
+
+    .download-btn {
+        padding: 0.5rem 2rem;
+    }
+
+    .download-right img {
+        margin-bottom: 1rem;
+    }
+}
+
+/* medium screens */
+@media (min-width: 768px) {
+    .download-para {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* l screens */
+@media (min-width: 1024px) {
+    .download-para {
+        font-size: var(--size-3xl);
+    }
+
+    .download-right {
+        width: 70%;
+    }
+
+    .download-right img {
+        border-radius: 10px;
+    }
+
+    .download-btn {
+        padding: 1rem 4rem;
+        font-size: var(--size-xl);
+    }
+}
+
+/* xl screens */
+@media (min-width: 1440px) {
+    .download-para {
+        font-size: var(--size-4xl);
+    }
+
+    .download-right {
+        width: 80%;
+    }
+
+    .download-btn {
+        font-size: var(--size-2xl);
+    }
+}
