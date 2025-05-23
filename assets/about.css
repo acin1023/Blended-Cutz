@@ -36,7 +36,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url(../images/bg1.jpeg);
+    background-image: url(./images/bg1.jpeg);
     background-size: cover;
     background-position: center;
     opacity: 0.4;
