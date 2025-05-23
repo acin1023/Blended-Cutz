@@ -29,6 +29,7 @@ body {
     background-image: linear-gradient(#272222, #813C3C);
     height: auto;
     margin-bottom: 1rem;
+    /* border: 10px solid yellow; */
 }
 
 .topinfo-container {
@@ -140,7 +141,7 @@ a:hover {
     background-color: #CCB9B9;
     /* border: 10px solid greenyellow; */
     display: grid;
-    width: 100%;
+    /* width: 80%; */
     place-content: center;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
@@ -288,8 +289,9 @@ a:hover {
 
     .right-container {
         font-size: var(--size-2xl);
-        width: 80%;
+        width: 70%;
         margin: auto;
+        margin-bottom: 3rem;
     }
 }
 
